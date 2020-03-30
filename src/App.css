@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-color: #0d0d0d;
+  background-color: #3f3f47;
+  overflow: auto;
   color: white;
-  min-height: 100vh;
 }
 
 .App-header {

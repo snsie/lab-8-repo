@@ -14,3 +14,5 @@ give them a heads up about the readme being created.
 3. talk about import bash commands (cd, cp, mv, rm (-rf for folders), git, )
 
 4. talk about the differences in css specifications. id/class/html element
+
+5. https://www.youtube.com/watch?v=aircAruvnKk&t=317s
