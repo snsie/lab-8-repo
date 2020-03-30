@@ -200,9 +200,12 @@ function App() {
           <li>
             Verify that you have pushed your changes to your public repo by
             checking the last commit time, which is listed on the right side of
-            your repository's homepage. If that time looks correct, then use the
-            button located directly above that text to download or "git clone
-            your-app-repo-url" your app to your local machine.
+            your repository's homepage. If the build folder isn't listed, check
+            your .gitignore file to see if it includes a build folder. If it is,
+            remove it then add/commit/push the change. If build folder is listed
+            and the time looks correct, then use the button located directly
+            above that text to download or "git clone your-app-repo-url" your
+            app to your local machine.
           </li>
           <li>
             To host your app, this tutorial will use{" "}
