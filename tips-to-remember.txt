@@ -1,0 +1,16 @@
+
+1. initial github step
+echo "# lab-8-repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/snsie/lab-8-repo.git
+git push -u origin master
+
+give them a heads up about the readme being created.
+
+2. talk about the differences beween . and .. when in terminal
+
+3. talk about import bash commands (cd, cp, mv, rm (-rf for folders), git, )
+
+4. talk about the differences in css specifications. id/class/html element

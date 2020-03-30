@@ -1,2 +1,1 @@
-# lab-8-repo
-# lab-8-repo
+# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
