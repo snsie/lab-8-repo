@@ -48,13 +48,13 @@ function App() {
           complete the labs, think about potential ways you could apply each
           tool.{" "}
           <font color="#F03F47">
-            You will be asked to provide a couple examples in your report.{" "}
+            Discuss with your partner and provide a couple examples in your
+            report.{" "}
           </font>{" "}
           <br /> <br />
           <font color="orange">
             {" "}
-            Don't worry if your coding experience is limited or if you haven't
-            worked with machine learning before!
+            Don't worry if your coding experience is limited!
           </font>{" "}
           This lab can be completed with less than 10 lines of code.{" "}
         </p>
@@ -78,7 +78,7 @@ function App() {
           <a href="https://htmlcheatsheet.com/">HTML</a>,{" "}
           <a href="https://htmlcheatsheet.com/js/">Javascript</a>, and{" "}
           <a href="https://htmlcheatsheet.com/css/">CSS</a> code. Hypertext
-          markup language (HTML) is the oldest out of the three and is primarily
+          Markup Language (HTML) is the oldest out of the three and is primarily
           used to define the layout of webpages. Cascading style sheets (CSS)
           was introduced second and enables developers to style their HTML
           elements (e.g. font style or coloring). To incorporate coding logic
@@ -121,8 +121,8 @@ function App() {
         <p>
           Another tool you will be working with is{" "}
           <a href="https://www.gitpod.io/blog/gitpod-launch/">GitPod</a>. GitPod
-          is an online IDE that anyone can freely use for 50 hours a month.
-          Students who have the{" "}
+          is an online Integrated Development Environment (IDE) that anyone can
+          freely use for 50 hours a month. Students who have the{" "}
           <a href="https://education.github.com/pack">
             Github Student Developer Pack
           </a>{" "}
@@ -148,7 +148,7 @@ function App() {
           files to the staging area. Commit will take a snapshot of the
           currently staged changes and helps maintain a clear history of how
           your work evolved. You should include a message when you run commit
-          your code since you can refur to that message later if you need to
+          your code since you can refer to that message later if you need to
           find something that was removed at some point when developing your
           project. Always try to use detailed commit messages since you can use
           them in the future to find something located in a previous version of
@@ -191,7 +191,7 @@ function App() {
         <ul>
           <li>
             Download <a href="https://www.google.com/chrome/">Chrome</a> if you
-            don't alread have it. We will be using Chrome's{" "}
+            don't already have it. We will be using Chrome's{" "}
             <a href="https://developers.google.com/web/tools/chrome-devtools">
               DevTools
             </a>{" "}
