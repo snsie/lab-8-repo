@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Lab #8a Intro to Web Development</h1>
+        <h1>Lab #8a Intro to App Development</h1>
         <iframe
           title="Developer in the wild"
           style={{ marginTop: "15px" }}
@@ -35,7 +35,7 @@ function App() {
           <strong>
             <u>Lab Objective</u>:{" "}
           </strong>
-          Build your own website.
+          Build and deploy your own web application.
         </p>
         <p>
           <b>
@@ -62,7 +62,7 @@ function App() {
           <strong>
             <u>Lab</u>:
           </strong>{" "}
-          To build our webpage, we will use{" "}
+          To build your app, we will use{" "}
           <a href="https://reactjs.org/tutorial/tutorial.html">React</a>, which
           is currently the most{" "}
           <a href="https://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue-vs-svelte-vs-flutter">
@@ -109,7 +109,7 @@ function App() {
           projects in the future.
         </p>
         <p>
-          To explore your applications, you will be using{" "}
+          To store your project files, you will be using{" "}
           <a href="https://www.youtube.com/watch?v=w3jLJU7DT5E">GitHub</a>.
           GitHub is a powerful resource to store your project code and maintain
           a detailed history of every modification you've ever made to your
@@ -237,8 +237,8 @@ function App() {
             The IDE that you just opened is a running{" "}
             <a href="https://docs.docker.com/engine/docker-overview/">Docker</a>{" "}
             container that is preinstalled with the necessary software to build
-            our app. (i.e. <a href="https://nodejs.org/en/">Node.js</a>) Use the
-            IDE terminal to create your app as described in React's{" "}
+            your app. (i.e. <a href="https://nodejs.org/en/">Node.js</a>) Use
+            the IDE terminal to create your app as described in React's{" "}
             <a href="https://reactjs.org/docs/create-a-new-react-app.html">
               documentation
             </a>
