@@ -48,7 +48,7 @@ function App() {
           complete the labs, think about potential ways you could apply each
           tool.{" "}
           <font color="#F03F47">
-            Discuss with your partner and provide a couple examples in your
+            Discuss with your partner and provide a couple of examples in your
             report.{" "}
           </font>{" "}
           <br /> <br />
