@@ -68,7 +68,7 @@ function App() {
           <a href="https://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue-vs-svelte-vs-flutter">
             popular
           </a>{" "}
-          front-end web development software. Despite being the the most widely
+          front-end web development software. Despite being the most widely
           used, there are a variety of{" "}
           <a href="https://2019.stateofjs.com/front-end-frameworks/">
             alternatives
@@ -116,31 +116,14 @@ function App() {
           project. You don't have to worry about losing your previous work if
           your hard drive crashes and you can demonstrate the contributions
           you've made to your project if you ever have to prove ownership of
-          your work.
-        </p>
-        <p>
-          Another tool you will be working with is{" "}
-          <a href="https://www.gitpod.io/blog/gitpod-launch/">GitPod</a>. GitPod
-          is an online Integrated Development Environment (IDE) that anyone can
-          freely use for 50 hours a month. Students who have the{" "}
-          <a href="https://education.github.com/pack">
-            Github Student Developer Pack
-          </a>{" "}
-          can use the IDE for up to 100 hours a month. User sessions in GitPod
-          run as remote{" "}
-          <a href="https://docs.docker.com/engine/docker-overview/">Docker</a>{" "}
-          containers. You can tweak your containers to preinstall whatever
-          software you will be using. You can think of Docker containers as
-          protective snow globes that hold your running code and ensure that it
-          will run in any environment.{" "}
+          your work.{" "}
           <font color="orange">
-            When working with GitPod, you should always save your code using
-            GitHub's{" "}
+            To keep your GitHub projects up to date, you need to save your code
+            using GitHub's{" "}
             <a href="https://rogerdudler.github.io/git-guide/">
               add, commit, then push
             </a>{" "}
-            pattern. GitPod containers are temporary and are deleted
-            automatically by GitPod after 14 days of inactivity.
+            pattern.
           </font>{" "}
           Add will send any modified files (relative to your public repository)
           to a local staging area. You can specify individual files (e.g. "git
@@ -158,7 +141,7 @@ function App() {
           </a>
           " to display all local modifications relative to your remote GitHub
           repository. Run "<code>git status</code>" first since it will help
-          when writing your commit messages. Finally, push will "push" your
+          when writing your commit messages. Finally, "git push" will push your
           modified local repository to your remote repository. Your local and
           remote repositories will then be synced and will mirror each other. If
           you have a "<code>.gitignore</code>" file (which you will), any files
@@ -171,7 +154,154 @@ function App() {
           commit -m "I updated thing C and added thing D", (4) "push").
         </p>
         <p>
+          Another tool you will be working with is{" "}
+          <a href="https://www.gitpod.io/blog/gitpod-launch/">GitPod</a>. GitPod
+          is an online Integrated Development Environment (IDE) that anyone can
+          freely use for 50 hours a month. Students who have the{" "}
+          <a href="https://education.github.com/pack">
+            GitHub Student Developer Pack
+          </a>{" "}
+          can use the IDE for up to 100 hours a month. User sessions in GitPod
+          run as remote{" "}
+          <a href="https://docs.docker.com/engine/docker-overview/">Docker</a>{" "}
+          containers. You can tweak your containers to preinstall whatever
+          software you will be using. You can think of Docker containers as
+          protective snow globes that hold your running code and ensure that it
+          will run in any environment.{" "}
           <font color="orange">
+            When working with GitPod, it is especially important to keep your
+            GitHub repository up to date via the{" "}
+            <a href="https://rogerdudler.github.io/git-guide/">
+              add, commit, then push
+            </a>{" "}
+            pattern. GitPod containers are temporary and are deleted
+            automatically by GitPod after 14 days of inactivity. You can check
+            your workspaces by clicking the icon located at the top right corner
+            of your GitPod environment, then selecting "Open Workspaces" from
+            the dropdown menu that appears. All of the workspaces you've opened
+            will be listed. The running workspaces will have a vertical green
+            bar to the left. If you have multiple workspaces with green vertical
+            bars listed, both are consuming your monthly quota.{" "}
+          </font>{" "}
+          Workspaces that are currently shutting down will have a yellow
+          vertical bar. Inactive workspaces won't have a colored bar and aren't
+          counting against your quota. Every workspace becomes inactive after 30
+          minutes of inactivity, but it's best to close your workspace (after
+          pushing your updates to GitHub) so that it won't consume your monthly
+          usage.
+        </p>
+        <p>
+          Most Javascript software, such as React, rely on{" "}
+          <a href="https://www.w3schools.com/nodejs/">Node.js</a>. Node.js is an
+          open source server environment that enables flexible execution of
+          Javascript projects. You can execute a single Javascript file once,
+          continuously run a Javascript project in development mode (known as{" "}
+          <a href="https://hashnode.com/post/what-is-hot-reloading-exactly-is-it-just-another-fancy-term-for-live-reloading-cirvu9avg0c8mmk53b5zxr3ga">
+            hot reloading
+          </a>
+          ), or serve your completed Javascript project to a public{" "}
+          <a href="https://en.wikipedia.org/wiki/URL">URL</a>. Node.js provides
+          a command-line interface (
+          <a href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a>
+          ) called Node package manager (
+          <a href="https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/">
+            npm
+          </a>
+          ). You will use npm to create your project, download the necessary
+          project libraries, and build the production version of your app.
+          Packages downloaded with npm will be listed in a{" "}
+          <code>
+            <a href="https://docs.npmjs.com/files/package.json">package.json</a>
+          </code>{" "}
+          file. Every Node.js project has a <code>package.json</code> file so
+          it's wise to check that file first whenever you explore a new project.
+          In addition to listing the installed libraries for a project,{" "}
+          <code>package.json</code> files also list executable commands and a
+          variety of other potential project specifications. You can even add
+          your own executable commands to your project's{" "}
+          <code>package.json</code> file. After running "npm install" in the
+          same directory as a <code>package.json</code> file, the Node.js
+          libraries will be installed in a{" "}
+          <a href="https://www.sitepoint.com/beginners-guide-node-package-manager/">
+            node_modules
+          </a>{" "}
+          folder.
+        </p>
+        <p>
+          When working with Node.js projects on GitHub, you should find a{" "}
+          <code>
+            <a href="https://www.pluralsight.com/guides/how-to-use-gitignore-file">
+              .gitignore
+            </a>
+          </code>{" "}
+          file in your project root folder that includes the{" "}
+          <code>node_modules</code> folder in addition to other files that
+          GitHub should ignore. Forcing git to track every file in every
+          installed project library would make updating your GitHub repository
+          (e.g. the add/commit/push pattern) take a very long time. Therefore,
+          it's common practice to ignore these files in your public repository
+          and to run "npm install" in the same directory as the{" "}
+          <code>package.json</code> whenever you are opening your project in a
+          new workspace. package.json file. You will need to run "cd" into your
+          app directory and then run "npm install" to re-download the Node.js
+          packages that were installed when you ran "npx create-react-app
+          myapp." You want the "node_modules" to be included in your
+          ".gitignore" file because it will take git a long time to sync your
+          changes if it has to go through every single library that you're
+          using. The "package.json" file is so helpful since it tells node.js
+          what packages to look for when cloning a repository.{" "}
+          <font color="orange">
+            When opening a new workspace with GitPod, you likely won't have the{" "}
+            <code>node_modules</code> folder in your project directory. You can
+            run "npm install" again in the same directory as your{" "}
+            <code>package.json</code> file to reinstall the necessary packages.
+            If you return to a GitPod workspace that you were previously working
+            on, you should already have the <code>node_modules</code> folder. If
+            so, reinstallation isn't necessary. When working with GitPod, you
+            should check your GitPod workspace list frequently to ensure you
+            don't have duplicate workspaces.
+          </font>
+        </p>
+        <p>
+          {" "}
+          React's{" "}
+          <a href="https://reactjs.org/docs/create-a-new-react-app.html">
+            documentation
+          </a>{" "}
+          will tell you to use{" "}
+          <a href="https://www.npmjs.com/package/npx">npx</a> when first
+          creating your app instead of npm. Using npx is helpful because it
+          temporarily downloads the required{" "}
+          <a href="https://github.com/facebook/create-react-app">
+            create-react-app
+          </a>{" "}
+          binaries before creating the project. If you run "npm create-react-app
+          myapp" you would get an error unless you already installed
+          create-react-app as a global package (i.e. npm install --global
+          create-react-app). Installing the package globally will make enable
+          npm to understand the "create-react-app" command. However, installing
+          the library globally might become problematic if you don't keep it up
+          to date. Using npx will ensure that you are referring to the up to
+          date version of the library when creating your app, and you won't need
+          to install the app globally. When you change into your newly created
+          app's directory, (e.g.{" "}
+          <a href="https://en.wikipedia.org/wiki/Cd_(command)">cd</a> in{" "}
+          <a href="https://cs.lmu.edu/~ray/notes/bash/">Bash</a>) you will then
+          have access to all of the project libraries that are located in your{" "}
+          <code>node_modules</code> folder and listed in your{" "}
+          <code>package.json</code> file. You no longer need the global packages
+          once you're working in your local project. Not having to preinstall
+          global packages makes npx a useful tool when creating new projects.{" "}
+          <font color="orange">
+            After your project is created, npx is no longer necessary and you
+            should use npm.
+          </font>
+        </p>
+        <p>
+          {" "}
+          Side note:
+          <font color="orange">
+            {" "}
             Don't let yourself get pigeonholed into strictly using one tool.
           </font>{" "}
           Every new tool you learn will improve your ability to learn more tools
@@ -221,14 +351,25 @@ function App() {
             go to your repository homepage.
           </li>
           <li>
-            If you've signed up for GitPod, there will be to a "Gitpod" button
-            on the right side of your repository. Use that button to open the
-            IDE within your newly created project. If using a different IDE, you
-            can clone the repository to your local machine with{" "}
+            If you've signed up for GitPod. Download the{" "}
+            <a href="https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en">
+              Chrome GitPod Extension
+            </a>
+            , which will add a "Gitpod" button on the right side of your
+            repository. Use that button to open the IDE within your newly
+            created project. If using a different IDE, you can clone the
+            repository to your local machine with{" "}
             <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">
               Git
             </a>
-            .
+            .{" "}
+            <font color="orange">
+              Every time you press the GitPod button, a new GitPod workspace
+              will be created even if you have already opened the same
+              repository in GitPod previously. You can either reinstall the
+              Node.js libraries or list your workspaces in GitPod and return to
+              the correct workspace from there.{" "}
+            </font>
           </li>
         </ul>
         <h3 align="center">Build Your App</h3>
@@ -256,25 +397,28 @@ function App() {
             changes you make whenever you save an opened file.
           </li>
           <li>
-            Explore your project's file structure. In your project's root,
-            you'll find a <code>package.json</code> file that lists the
-            installed softare, executable scripts, and a variety of other
-            potential{" "}
-            <a href="https://docs.npmjs.com/files/package.json">
-              project specifications
-            </a>
-            . Every Node.js project has a <code>package.json</code> file so it's
-            usually wise to check that file first whenever you explore a new
-            project. Your project's main source code can be found in the{" "}
-            <code>src</code> folder. In that folder you'll find a series of
-            Javascript and CSS files. There aren't any HTML files in your source
-            folder, but there is an <code>index.html</code> file located in your
-            public folder. Despite not being in the src folder, the{" "}
-            <code>index.html</code> is connected to one of the Javascript files.{" "}
+            Explore your project's file structure and the newly created{" "}
+            <code>package.json</code> file. Your project's main source code can
+            be found in the <code>src</code> folder. In that folder you'll find
+            a series of Javascript and CSS files. There aren't any HTML files in
+            your source folder, but there is an <code>index.html</code> file
+            located in your public folder. Despite not being in the src folder,
+            the <code>index.html</code> is connected to one of the Javascript
+            files.{" "}
             <font color="red">
-              Identify that Javascript file in your lab report and the variable
-              id that is shared between the two files.
-            </font>
+              Identify that Javascript file in your source code and the identity
+              of the{" "}
+              <a href="https://www.w3schools.com/html/html_id.asp">
+                id variable
+              </a>{" "}
+              that links the <code>index.html</code> file with the Javascript
+              file.
+            </font>{" "}
+            <font color="orange">
+              Every question in this lab that asks you to look for something in
+              your <strong>source code</strong> is expecting you to find the
+              solution in the <code>src</code> folder.
+            </font>{" "}
           </li>
           <li>
             Open up your project into a new window, then press "ctrl-shift-c"
@@ -283,15 +427,15 @@ function App() {
               Chrome DevTools
             </a>
             . The Elements panel contains your compiled html code, which will
-            update whenever you modify and save any of your project files. This
-            is known as{" "}
+            update whenever you modify and save any of your project files. As
+            mentioned previously, this is referred to as{" "}
             <a href="https://hashnode.com/post/what-is-hot-reloading-exactly-is-it-just-another-fancy-term-for-live-reloading-cirvu9avg0c8mmk53b5zxr3ga">
               hot reloading
             </a>{" "}
-            and it is very helpful when developing your software. The top left
-            corner of the DevTools panel contains an image of a mouse hovering
-            over a box. Make sure that button is highlighted then hover over
-            specific elements of your app.
+            is very helpful when developing your software. The top left corner
+            of the DevTools panel contains an image of a mouse hovering over a
+            box. Make sure that button is highlighted then hover over specific
+            elements of your app.
           </li>
           <li>
             You can also hover over the rows in the DevTools Elements pane.
@@ -301,8 +445,7 @@ function App() {
           <li>
             On the left side of the html code there are triangles that you can
             click to collapse ore reveal subsections of your app. Reveal the
-            each section so that you can hover over your mouse over the image
-            tag{" "}
+            each section so that you can hover your mouse over the image tag{" "}
             <a href="https://www.w3schools.com/tags/tag_img.asp">
               <code>{"<img src=...>"}</code>
             </a>{" "}
@@ -318,10 +461,21 @@ function App() {
             <a href="https://reactjs.org/docs/faq-styling.html">className</a> in
             React).{" "}
             <font color="red">
-              Identify every className that was defined in the source code files
-              and include them in your reports. Discuss why there are repeated
-              class names in the CSS files.
+              Identify every{" "}
+              <a href="https://reactjs.org/docs/faq-styling.html">className</a>{" "}
+              that was defined in your source code Javascript files and include
+              them in your reports. Discuss why some of the CSS files in your
+              source code also include the same variable names.{" "}
             </font>
+            (
+            <a href="https://htmldog.com/guides/css/intermediate/classid/">
+              hint
+            </a>
+            ,{" "}
+            <a href="https://www.w3schools.com/cssref/css_selectors.asp">
+              additional info on topic
+            </a>
+            ){" "}
           </li>
           <li>
             <font color="red">
@@ -360,10 +514,15 @@ function App() {
             <a href="https://www.netlify.com/">Netlify</a>'s free hosting
             service. Feel free to use whatever hosting service you'd like.
             Netlify makes it easy to host websites for free and offers a
-            generous monthly memory bandwith. After you create your Netlify
+            generous monthly memory bandwidth. After you create your Netlify
             profile, you'll eventually reach a new site page that contains an
-            option to drag and drop your site into a grey dashed box. Grab the
-            build folder from your local project and drop it into that box.
+            option to drag and drop your site into a grey dashed box. Grab the{" "}
+            <font color="orange">build folder</font> from your local project and
+            drop it into that box. Your build folder should have an{" "}
+            <code>index.html</code> file (i.e.{" "}
+            <code>your_path/build/index.html</code>). Netlify (and pretty much
+            every other static hosting site) expects an <code>index.html</code>{" "}
+            file in the root of the folder that you're uploading.
           </li>
           <li>
             Go to your public URL to see your live site! You can change your
@@ -374,7 +533,7 @@ function App() {
           You will be expected to write a brief lab report as you have done
           previously. You need to respond to all objectives that are marked in{" "}
           <font color="red">red</font> within your reports. Include both
-          partner's respective URLs and github repos when submitting your
+          partner's respective URLs and GitHub repositories when submitting your
           reports.
         </h4>
       </div>
