@@ -421,14 +421,19 @@ function App() {
             </font>{" "}
           </li>
           <li>
-            Open up your project into a new window, then press "ctrl-shift-c"
-            (command-shift-c on mac) to open up the Elements panel in{" "}
+            Open up your project into a new window or tab, then press
+            "ctrl-shift-c" (command-shift-c on mac) to open up the Elements
+            panel in{" "}
             <a href="https://developers.google.com/web/tools/chrome-devtools">
               Chrome DevTools
             </a>
-            . The Elements panel contains your compiled html code, which will
-            update whenever you modify and save any of your project files. As
-            mentioned previously, this is referred to as{" "}
+            . If your app is running in GitPod's preview mode, DevTools will
+            also display html code that is related to GitPod's IDE. To prevent
+            this, you can click the "Open Ports" tab at the top of your terminal
+            and select the "Open Browser" option located on the right side of
+            port 3000. The Elements panel contains your compiled html code,
+            which will update whenever you modify and save any of your project
+            files. As mentioned previously, this is referred to as{" "}
             <a href="https://hashnode.com/post/what-is-hot-reloading-exactly-is-it-just-another-fancy-term-for-live-reloading-cirvu9avg0c8mmk53b5zxr3ga">
               hot reloading
             </a>{" "}
