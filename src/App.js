@@ -495,7 +495,11 @@ function App() {
             production by running "<code>npm run build</code>" in your terminal.
             The <code>build</code> command will create a new "<code>build</code>
             " folder that contains a static version of your app that is ready to
-            be hosted publicly!
+            be hosted publicly! If your app is currently running in development
+            mode, you need to kill the process by typing "ctrl-c" in your
+            terminal. This{" "}
+            <a href="https://www.youtube.com/watch?v=C-AQAJXdoS8">video</a>{" "}
+            provides a good intro into how command line interfaces work.
           </li>
         </ul>
         <h3 align="center">Deploy Your App</h3>
