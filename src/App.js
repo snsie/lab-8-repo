@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Lab #8a Intro to App Development</h1>
+        <h1>Lab #8 Intro to App Development</h1>
         <iframe
           title="Developer in the wild"
           style={{ marginTop: "15px" }}
