@@ -89,7 +89,8 @@ const Lab8bPage = () => (
         background. If one of those points were fed into the network, the
         network would make the wrong prediction. The background in the image on
         the right matches the color of the points located in the same
-        corresponding region.{" "}
+        corresponding region. The test loss in that image is much lower compared
+        to the test loss on the right.
       </p>
       <div align="center" width="100vw">
         <img
@@ -107,12 +108,13 @@ const Lab8bPage = () => (
         />
       </div>
       <p>
-        If you look at the four dataset boxes on the left side of the screen,
-        you will notice that a couple of them aren't lined up with the output
-        map on the right side of the screen. For example, the example with two
-        clusters displays the orange cluster at the top left corner of the box.
-        If you click on that box to open the example, the output map displays
-        the orange cluster on the bottom left corner of the box.{" "}
+        If you look at the four data boxes on the left side of the webpage, you
+        will notice that a couple of them illustrate points that aren't lined up
+        with the output map on the right side of the screen. For example, the
+        box on the left with two clusters displays the orange cluster at the top
+        left corner of the box. If you click on that box to open the example,
+        the output map displays the orange cluster on the bottom left corner of
+        the box.{" "}
         <font color="orange">
           The author of the site needs to fix this bug. The boxes at the left
           are meant to be a general reference when choosing a dataset.
@@ -138,8 +140,8 @@ const Lab8bPage = () => (
         </li>
 
         <li>
-          Open the circle example in the top left corner. In the example, a
-          cluster of dots belonging to the "<font color="orange">orange</font>"
+          Open the circle example in the top left data box. In the example, a
+          cluster of dots belonging to the "<font color="blue">blue</font>"
           class are surrounded by dots belonging to the "
           <font color="orange">orange</font>" class. Modify your network so that
           it only has one neuron and one hidden layer. You should see three
