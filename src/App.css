@@ -1,33 +1,33 @@
 .App {
-  display: grid;
-
-  background-color: #3f3f47;
-  overflow: hidden;
-
   grid-template-columns: 1fr;
-  grid-template-rows: 2em 1fr;
-  font-size: calc(10px + 2vmin);
+  grid-template-rows: 2rem 1fr;
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  background-color: #3f3f47;
+  overflow: scroll;
+  width: 100vw;
 }
 
 .Nav-panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100vw;
+  display: inline-block;
   background-color: #202024;
   text-align: center;
   grid-column: 1;
   grid-row: 1;
 
-  font-size: calc(12px + 2vmin);
+  font-size: calc(18px + 2vmin);
   color: #befaec;
 }
 
 .Page-content {
+  width: 90%;
+  justify-self: center;
   color: white;
   grid-column: 1;
-  margin-left: 2em;
-  margin-right: 2em;
-
   grid-row: 2;
 }
 .Page-content a {
@@ -38,4 +38,11 @@
 }
 .Page-content header {
   text-align: center;
+}
+.gif {
+  box-sizing: border-box;
+  justify-items: center;
+
+  width: 30em;
+  height: 20em;
 }

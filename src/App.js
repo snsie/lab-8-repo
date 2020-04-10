@@ -6,17 +6,15 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
         <div className="Nav-panel">
-          <nav style={{}}>
+          <nav>
             <Link
               to="/lab-8a"
               style={{
                 color: "#9BCCC1",
-                paddingLeft: "10vw",
-                paddingRight: "10vw",
-                fontSize: "calc(18px + 2vmin)"
+                marginRight: "10vw"
               }}
             >
               Lab 8a
@@ -26,9 +24,7 @@ function App() {
               to="/lab-8b"
               style={{
                 color: "#9BCCC1",
-                paddingLeft: "10vw",
-                paddingRight: "10vw",
-                fontSize: "calc(18px + 2vmin)"
+                paddingLeft: "10vw"
               }}
             >
               Lab 8b
@@ -37,11 +33,11 @@ function App() {
         </div>
         <Routes>
           <Route exact path="/" element={<Lab8aPage />} />
-          <Route path="/lab-8a" element={<Lab8aPage />} />
-          <Route path="/lab-8b" element={<Lab8bPage />} />
+          <Route exact path="/lab-8a" element={<Lab8aPage />} />
+          <Route exact path="/lab-8b" element={<Lab8bPage />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

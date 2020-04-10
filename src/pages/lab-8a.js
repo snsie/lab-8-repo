@@ -6,20 +6,14 @@ const Lab8aPage = () => (
       <header>
         <h1>Lab #8a: Intro to App Development</h1>
         <iframe
+          className="gif"
           title="Developer in the wild"
-          style={{ marginTop: "15px" }}
           src="https://giphy.com/embed/L8K62iTDkzGX6"
-          width="440"
-          height="250"
           frameBorder="0"
-          class="giphy-embed"
           allowFullScreen
         ></iframe>
-        <p style={{ margin: "-1px" }}>
-          <a
-            style={{ fontSize: ".7em" }}
-            href="https://giphy.com/gifs/web-development-L8K62iTDkzGX6"
-          >
+        <p>
+          <a href="https://giphy.com/gifs/web-development-L8K62iTDkzGX6">
             via GIPHY
           </a>
         </p>
@@ -304,7 +298,7 @@ const Lab8aPage = () => (
       </p>
       <br />
       <strong>Follow the steps below to complete this exercise:</strong>
-      <h3 align="center">Set Up Your Dev Environment</h3>
+      <h3>Set Up Your Dev Environment</h3>
       <ul>
         <li>
           Download <a href="https://www.google.com/chrome/">Chrome</a> if you
@@ -357,7 +351,7 @@ const Lab8aPage = () => (
           </font>
         </li>
       </ul>
-      <h3 align="center">Build Your App</h3>
+      <h3>Build Your App</h3>
       <ul>
         <li>
           The IDE that you just opened is a running{" "}
@@ -484,7 +478,7 @@ const Lab8aPage = () => (
           provides a good intro into how command line interfaces work.
         </li>
       </ul>
-      <h3 align="center">Deploy Your App</h3>
+      <h3>Deploy Your App</h3>
       <ul>
         <li>
           Follow the git pipeline to sync your current environment with your
@@ -520,7 +514,7 @@ const Lab8aPage = () => (
           public site name in the site-settings menu.
         </li>
       </ul>
-      <h4 style={{ paddingLeft: "20px" }} align="center">
+      <h4>
         You will be expected to write a brief lab report as you have done
         previously. You need to respond to all objectives that are marked in{" "}
         <font color="red">red</font> within your reports. Include both partner's

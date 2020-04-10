@@ -9,15 +9,15 @@ const Lab8bPage = () => (
     <div className="Page-content">
       <header>
         <h1>Lab #8b: Open Source Machine Learning Apps</h1>
+
         <iframe
+          className="gif"
           src="https://giphy.com/embed/lCrU3nO2gNWIU"
-          width="480"
-          height="270"
           frameBorder="0"
-          class="giphy-embed"
           allowFullScreen
         ></iframe>
-        <p style={{ margin: "-1px" }}>
+
+        <p>
           <a href="https://giphy.com/gifs/loop-robotic-lCrU3nO2gNWIU">
             via GIPHY
           </a>
@@ -83,42 +83,46 @@ const Lab8bPage = () => (
       <p>
         As you train the networks, watch the 2D output maps on the right side of
         the webpage. If the network is doing well, the background color will
-        coincide with the color individual points located in the same region.
-        Take a look at the two output maps below as an example. The image in the
-        left has a large number of orange points that are surrounded by a blue
-        background. If one of those points were fed into the network, the
-        network would make the wrong prediction. The background in the image on
-        the right matches the color of the points located in the same
-        corresponding region. The test loss in that image is much lower compared
-        to the test loss on the right.
+        match the orange and blue points. The orange and blue points belong to
+        two separate classes, similar to the 10 classes of digits displayed in
+        the video. The background is the “output” or prediction of the neural
+        network. Take a look at the two output maps below as an example. Both of
+        them have the same input data, which is a small inner circle of blue
+        points surrounded by an outer circle of orange points. The left image
+        was made with just one neuron in the network, and the network struggled
+        to produce a background that matched the points. The test loss was high,
+        0.417. The right image was made with more neurons, notice how the
+        background matches the points much better and the test less is only
+        0.008.
       </p>
-      <div align="center" width="100vw">
+      <div
+        style={{
+          display: "flex",
+          width: "90vw",
+          height: "min(16rem,25vw)",
+          justifyContent: "space-around"
+        }}
+      >
         <img
-          style={{ paddingRight: "50px" }}
+          style={{ width: "max(22%,8rem)", height: "100%" }}
           src={badResult}
-          width="400px"
-          height="550px"
         />
 
         <img
-          style={{ paddingLeft: "50px" }}
+          style={{ width: "max(22%,8rem)", height: "100%" }}
           src={goodResult}
-          width="400px"
-          height="550px"
         />
       </div>
       <p>
-        If you look at the four data boxes on the left side of the webpage, you
-        will notice that a couple of them illustrate points that aren't lined up
-        with the output map on the right side of the screen. For example, the
-        box on the left with two clusters displays the orange cluster at the top
-        left corner of the box. If you click on that box to open the example,
-        the output map displays the orange cluster on the bottom left corner of
-        the box.{" "}
-        <font color="orange">
-          The author of the site needs to fix this bug. The boxes at the left
-          are meant to be a general reference when choosing a dataset.
-        </font>
+        If you look at the four datasets under “DATA” on the left side of the
+        webpage, you will notice that some of their points aren't lined up with
+        the points on the output map on the right side of the screen. For
+        example, the dataset on the left with two clusters displays the orange
+        cluster at the top left corner of the box. If you click on that box to
+        open the example, the output map displays the orange cluster on the
+        bottom left corner of the box. Do not worry about this because the
+        datasets on the left of the page are only representative patterns and
+        will not match the exact input data when you run your test.
       </p>
       <ul>
         <li>
@@ -141,16 +145,22 @@ const Lab8bPage = () => (
 
         <li>
           Open the circle example in the top left data box. In the example, a
-          cluster of dots belonging to the "<font color="blue">blue</font>"
-          class are surrounded by dots belonging to the "
+          cluster of points belonging to the "<font color="blue">blue</font>"
+          class are surrounded by points belonging to the "
           <font color="orange">orange</font>" class. Modify your network so that
-          it only has one neuron and one hidden layer. You should see three
-          total weights (illustrated as colored lines). One weight should be
-          extending from X1 to the hidden neuron, another from X2 to the hidden
-          neuron, and a third from the hidden neuron to the 2D output image.
-          Click play to let the model freely train on the data. Once the
-          network's performance on the test set stops improving, stop the model
-          and <font color="red">record your results</font>.
+          it only has one neuron and one hidden layer. Select just the x1 and x2
+          features. You should see three total weights illustrated as two
+          colored lines going from your selected x1, x2 features to the neuron
+          and one colored line from the neuron to the output. Click play to let
+          the model freely train on the data. Once the network's performance on
+          the test set stops improving, stop the model and{" "}
+          <font color="red">
+            record your test loss result, then repeat two times. Share the three
+            test loss values, the average test loss value, and one screenshot of
+            the best test run. In your screenshot include the selected x1, x2
+            features, the neuron, and the 2D output map.
+          </font>
+          .
         </li>
         <li>
           Repeat the previous step two additional times using (1) a network with
@@ -191,6 +201,17 @@ const Lab8bPage = () => (
               screenshot of your network, and described what changes you made.
             </font>{" "}
           </li>
+          <p style={{ alignItems: "center" }}>
+            <font color="red">Summary of Required Information:</font> Your lab
+            report should have 6 screenshots – 3 screenshots from your runs with
+            the top, left dataset with 1, 2, and 3 neurons, 2 screenshots from
+            your runs with the bottom, left dataset with 1 and 8 neurons, and 1
+            screenshot of you “beating the spiral” by showing a test loss of
+            less than 0.05. Although you only need to provide one screenshot per
+            scenario (e.g. top, left dataset with 1 neuron), you need to run
+            each scenario three times and give the test loss for each time as
+            well as the average as stated earlier in the lab.{" "}
+          </p>
           <p>
             <strong>Important Note: </strong>The website limits users to 8
             neurons in a single hidden layer. It's common practice to have over
@@ -233,7 +254,15 @@ const Lab8bPage = () => (
         <li>
           Read the repository's Readme.md and package.json files to identify
           what terminal commands you need to run to install the required
-          dependencies and run the app in development.{" "}
+          dependencies and run the app in development. The terminal commands are
+          similar to the commands you ran last week to initialize your React
+          app. Markdown files (i.e. files with the .md extension) are commonly
+          used to present static information, such as text and images.{" "}
+          <a href="https://www.markdownguide.org/cheat-sheet/">This link</a> is
+          a helpful cheatsheet to learn how markdown can be used to create
+          unique documents. You will find the repository's main Readme.md file
+          displayed on it's github homepage, directly below the graphic
+          displaying the project files.
           <font style={{ color: "red" }}>
             Identify these terminal commands in your report.{" "}
           </font>{" "}
@@ -340,7 +369,7 @@ const Lab8bPage = () => (
         <font color="red">red</font> within your reports. Include both partner's
         respective URLs and GitHub repositories when submitting your reports.
       </h4>
-      <h5 align="center">
+      <h5 style={{ textAlign: "center" }}>
         We hope you enjoyed learning the material in the last two labs. The goal
         of the labs was to expose everyone to some useful open source resources.
         To get the full benefit out of these labs, you need to start tweaking
