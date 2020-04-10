@@ -315,7 +315,7 @@ const Lab8bPage = () => (
         </li>
       </ul>
       <div style={{ display: "grid", justifyItems: "center" }}>
-        <video src={rlExample} controls style={{ width: "50vw" }} />
+        <video autoPlay loop src={rlExample} style={{ width: "50vw" }} />
       </div>{" "}
       <br />
       <h3 align="center">Part 3: Use IBM's quantum computer in the cloud</h3>
