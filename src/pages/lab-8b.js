@@ -4,6 +4,7 @@ import "../App.css";
 import goodResult from "../good-result.png";
 import badResult from "../bad-result.png";
 import quantumCircuit from "../quantum-circuit.PNG";
+import rlExample from "../rl-example.mp4";
 const Lab8bPage = () => (
   <>
     <div className="Page-content">
@@ -99,19 +100,13 @@ const Lab8bPage = () => (
         style={{
           display: "flex",
           width: "90vw",
-          height: "min(16rem,25vw)",
+          height: "calc( 18vw * 1.35 ) ",
           justifyContent: "space-around"
         }}
       >
-        <img
-          style={{ width: "max(22%,8rem)", height: "100%" }}
-          src={badResult}
-        />
+        <img style={{ width: "18vw" }} src={badResult} />
 
-        <img
-          style={{ width: "max(22%,8rem)", height: "100%" }}
-          src={goodResult}
-        />
+        <img style={{ width: "18vw" }} src={goodResult} />
       </div>
       <p>
         If you look at the four datasets under “DATA” on the left side of the
@@ -201,7 +196,7 @@ const Lab8bPage = () => (
               screenshot of your network, and described what changes you made.
             </font>{" "}
           </li>
-          <p style={{ alignItems: "center" }}>
+          <p>
             <font color="red">Summary of Required Information:</font> Your lab
             report should have 6 screenshots – 3 screenshots from your runs with
             the top, left dataset with 1, 2, and 3 neurons, 2 screenshots from
@@ -319,6 +314,9 @@ const Lab8bPage = () => (
           <font color="red">Discuss the behaviors in your report.</font>
         </li>
       </ul>
+      <div style={{ display: "grid", justifyItems: "center" }}>
+        <video src={rlExample} controls style={{ width: "50vw" }} />
+      </div>{" "}
       <br />
       <h3 align="center">Part 3: Use IBM's quantum computer in the cloud</h3>
       <p>
@@ -349,7 +347,7 @@ const Lab8bPage = () => (
         </li>
       </ul>
       <div align="center">
-        <img src={quantumCircuit} width="90%" />
+        <img src={quantumCircuit} style={{ width: "85%" }} />
       </div>{" "}
       <p>
         You can't get anything wrong in this section so feel free to discuss
