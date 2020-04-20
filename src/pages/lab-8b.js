@@ -13,13 +13,13 @@ const Lab8bPage = () => (
 
         <iframe
           className="gif"
-          src="https://giphy.com/embed/lCrU3nO2gNWIU"
+          src="https://giphy.com/embed/YedmoNc3rsqI0"
           frameBorder="0"
           allowFullScreen
         ></iframe>
 
         <p>
-          <a href="https://giphy.com/gifs/loop-robotic-lCrU3nO2gNWIU">
+          <a href="https://giphy.com/gifs/art-neural-networks-computer-science-YedmoNc3rsqI0">
             via GIPHY
           </a>
         </p>
